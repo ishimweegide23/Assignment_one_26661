@@ -15,14 +15,14 @@ This repository contains three object-oriented Java programs solving different r
 ---
 
 ## 🧱 Project Structure
-
+```
 Assignment_one_26661/
 └── src/
 ├── q1_site_construction/
 ├── q2_hotel_management/
 └── q3_traffic_fines/
 
-
+```
 
 ### Each folder contains:
 - Java files for that question
