@@ -189,8 +189,7 @@ docker push kwibuka/assignment_one_26661:q3_traffic_fines
 ```bash
 docker run -it --rm kwibuka/assignment_one_26661:q3_traffic_fines
 ```
-📂 Docker Hub Repository
-🧩 All images are public on Docker Hub:
-🔗 kwibuka/assignment_one_26661
+## 📂 Docker Hub Repository
 
-
+🧩 All images are publicly available at:  
+🔗 **[kwibuka/assignment_one_26661](https://hub.docker.com/repository/docker/kwibuka/assignment_one_26661)**
