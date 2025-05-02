@@ -23,6 +23,7 @@ Assignment_one_26661/
 └── q3_traffic_fines/
 
 
+
 ### Each folder contains:
 - Java files for that question
 - A `Dockerfile`
@@ -68,15 +69,16 @@ cd src/q1_site_construction
 ```
 ➡️ This moves you to the folder that contains the Java files and Dockerfile.
 
-🛠️ Step 2: Build the Docker Image
+## 🛠️ Step 2: Build the Docker Image
+```bash
 
 docker build -t oop_26661_q1_site_construction .
+```
 
-
-🏗️ This tells Docker to:
+## 🏗️ This tells Docker to:
 
 Use the Dockerfile in this folder
-
+````
 Create an image called oop_26661_q1_site_construction
 
 
@@ -105,9 +107,89 @@ docker run -it --rm kwibuka/assignment_one_26661:q1_site_construction
 The program executes and exits
 
 
-🏨 Q2: Hotel Management System
-📌 Description
+# 🏨 Q2: Hotel Management System
+## 📌 Description
 Manages room booking, customer details, and billing.
 
-📂 Location: src/q2_hotel_management
-📝 Main Class: HotelManagementApp.java
+- 📂 Location: src/q2_hotel_management
+- 📝 Main Class: HotelManagementApp.java
+
+## 📄 Dockerfile
+
+```dockerfile
+FROM openjdk:21-jdk-slim
+WORKDIR /app
+COPY *.java ./q2_hotel_management/
+RUN javac q2_hotel_management/*.java
+CMD ["java", "q2_hotel_management.HotelManagementApp"]
+```
+
+## 🐳 Docker Commands
+### 🔹 Step 1: Go to the Folder
+```
+cd src/q2_hotel_management
+```
+
+# 🛠️ Step 2: Build the Image
+```bash
+docker build -t oop_26661_q2_hotel_management .
+
+```
+# 🏷️ Step 3: Tag the Image
+
+```bash
+
+docker tag oop_26661_q2_hotel_management kwibuka/assignment_one_26661:q2_hotel_management
+```
+# ☁️ Step 4: Push to Docker Hub
+```bash
+docker push kwibuka/assignment_one_26661:q2_hotel_management
+```
+## ▶️ Step 5: Run the App
+```bash
+docker run -it --rm kwibuka/assignment_one_26661:q2_hotel_management
+```
+
+
+# 🚦 Q3: Traffic Fines Management System
+## 📌 Description
+Records violations, calculates fines, and manages reporting.
+
+- 📂 Location: src/q3_traffic_fines
+- 📝 Main Class: TrafficFineApp.java
+
+## 📄 Dockerfile
+```dockerfile
+
+FROM openjdk:21-jdk-slim
+WORKDIR /app
+COPY *.java ./q3_traffic_fines/
+RUN javac q3_traffic_fines/*.java
+CMD ["java", "q3_traffic_fines.TrafficFineApp"]
+```
+## 🐳 Docker Commands
+### 🔹 Step 1: Go to Folder
+```bash
+cd src/q3_traffic_fines
+```
+🛠️ Step 2: Build the Image
+```bash
+docker build -t oop_26661_q3_traffic_fines .
+```
+🏷️ Step 3: Tag the Image
+```bash
+docker tag oop_26661_q3_traffic_fines kwibuka/assignment_one_26661:q3_traffic_fines
+```
+☁️ Step 4: Push to Docker Hub
+```bash
+docker push kwibuka/assignment_one_26661:q3_traffic_fines
+```
+▶️ Step 5: Run the App
+```bash
+docker run -it --rm kwibuka/assignment_one_26661:q3_traffic_fines
+```
+📂 Docker Hub Repository
+🧩 All images are public on Docker Hub:
+🔗 kwibuka/assignment_one_26661
+
+
