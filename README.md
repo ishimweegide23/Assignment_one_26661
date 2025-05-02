@@ -81,23 +81,24 @@ Use the Dockerfile in this folder
 ````
 Create an image called oop_26661_q1_site_construction
 
+````
 
-
-🏷️ Step 3: Tag the Image for Docker Hub
+## 🏷️ Step 3: Tag the Image for Docker Hub
+```bash
 
 docker tag oop_26661_q1_site_construction kwibuka/assignment_one_26661:q1_site_construction
-
+```
 
 🔖 This assigns a Docker Hub-friendly name to your image so you can push it online.
 
-☁️ Step 4: Push to Docker Hub
-
+### ☁️ Step 4: Push to Docker Hub
+```
 docker push kwibuka/assignment_one_26661:q1_site_construction
-
+```
 ▶️ Step 5: Run the Docker Container
-
+```bash
 docker run -it --rm kwibuka/assignment_one_26661:q1_site_construction
-
+```
 🚀 This runs your project in a container.
 
 -it: interactive terminal
