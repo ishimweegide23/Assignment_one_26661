@@ -1,11 +1,11 @@
 # 💻 Assignment One – Object Oriented Programming (OOP)
 **👤 Student**: Ishimwe Egide  
-**🆔 ID**: 2666
+**🆔 ID**: 26661
 **📚 Subject**: Object Oriented Programming – Assignment One  
 
 ---
 
-## 📦 Introduction
+## 📦 Introductio
 
 This repository contains three object-oriented Java programs solving different real-world problems. Each question is:
 - Implemented using clean OOP principles (Abstraction, Inheritance, Encapsulation, Polymorphism)
