@@ -5,7 +5,7 @@
 
 ---
 
-## 📦 Introductio
+## 📦 Introduction
 
 This repository contains three object-oriented Java programs solving different real-world problems. Each question is:
 - Implemented using clean OOP principles (Abstraction, Inheritance, Encapsulation, Polymorphism)
